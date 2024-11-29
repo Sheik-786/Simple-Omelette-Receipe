@@ -1,0 +1,98 @@
+body {
+    background-color: hsl(330, 100%, 98%);
+    font-family: "Outfit", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 500px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 28px;  
+    font-family: "Young Serif", serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #8c5c3f;
+    font-family: "Young Serif", serif;
+}
+
+.prep-time {
+    background-color: #f9f3f0;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.prep-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #555;
+}
+
+.prep-list li {
+    margin-bottom: 8px;
+}
+
+.ingredients, .instructions {
+    padding-left: 20px;
+    color: #555;
+}
+
+.instructions li {
+    margin-bottom: 10px;
+}
+
+.nutrition {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.nutrition td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    color: #555;
+}
+
+.nutrition td:second-child {
+    font-weight: bold;
+    color: #8c5c3f;
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .description, .prep-list, .ingredients li, .instructions li {
+        font-size: 14px;
+    }
+}
